@@ -1,0 +1,110 @@
+{
+ "properties": {
+  "displayName": "Az-dev-sub-intiative-001",
+  "policyType": "Custom",
+  "metadata": {
+   "category": "dev",
+   "version": "1.0",
+   "parameterScopes": {
+    "listOfResourceTypesNotAllowed": "/subscriptions/d54efd3c-3bc1-4b8c-b7e3-a0eeb4b26bd4",
+    "listOfAllowedSKUs": "/subscriptions/d54efd3c-3bc1-4b8c-b7e3-a0eeb4b26bd4",
+    "listOfAllowedLocations": "/subscriptions/d54efd3c-3bc1-4b8c-b7e3-a0eeb4b26bd4"
+   },
+   "createdBy": "574fa6ef-ae2f-49e1-a4e8-af9dff951a0d",
+   "createdOn": "2022-02-16T10:15:17.7435649Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Key vaults should have purge protection enabled_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/0b60c0b2-2dc2-4e1c-b5c9-abbed971de53",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Not allowed resource types_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/6c112d4e-5bc7-47ae-a041-ea2d9dccd749",
+    "parameters": {
+     "listOfResourceTypesNotAllowed": {
+      "value": []
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Linux machines should only have local accounts that are allowed_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/73db37c4-f180-4b0f-ab2c-8ee96467686b",
+    "parameters": {
+     "IncludeArcMachines": {
+      "value": "true"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Storage accounts should be limited by allowed SKUs_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/7433c107-6db4-4ad1-b57a-a76dce0154a1",
+    "parameters": {
+     "listOfAllowedSKUs": {
+      "value": [
+       "premium_lrs",
+       "premium_zrs",
+       "standard_grs"
+      ]
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Allowed virtual machine size SKUs_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/cccc23c7-8427-4f53-ad12-b6a63eb452b3",
+    "parameters": {
+     "listOfAllowedSKUs": {
+      "value": [
+       "standard_d4d_v4",
+       "standard_d4d_v5",
+       "standard_d2_v3",
+       "standard_d2_v4",
+       "standard_e32s_v3",
+       "standard_e4_v4",
+       "standard_e4_v3"
+      ]
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Allowed locations_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e56962a6-4747-49cd-b67b-bf8b01975c4c",
+    "parameters": {
+     "listOfAllowedLocations": {
+      "value": [
+       "eastus2",
+       "eastus",
+       "westeurope"
+      ]
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Private endpoint should be enabled for PostgreSQL servers_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/0564d078-92f5-4f97-8398-b9f58a51f70b",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Azure Backup should be enabled for Virtual Machines_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/013e242c-8828-4970-87b3-ab247555486d",
+    "parameters": {},
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/subscriptions/d54efd3c-3bc1-4b8c-b7e3-a0eeb4b26bd4/providers/Microsoft.Authorization/policySetDefinitions/e873585c72024dcbb214e15c",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "e873585c72024dcbb214e15c"
+}
